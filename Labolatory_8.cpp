@@ -1,4 +1,4 @@
-// Labolatory_8.cpp: определяет точку входа для приложения.
+// Labolatory_8.cpp: Г®ГЇГ°ГҐГ¤ГҐГ«ГїГҐГІ ГІГ®Г·ГЄГі ГўГµГ®Г¤Г  Г¤Г«Гї ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГї.
 //
 
 #include "stdafx.h"
@@ -113,7 +113,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	switch (message)
 	{
 
-	case WM_RBUTTONDOWN:
+	case WM_LBUTTONDOWN:
 		x2 = x1 = LOWORD(lParam);
 		y2 = y1 = HIWORD(lParam);
 		break;
@@ -121,7 +121,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		break;
 
 	case WM_MOUSEMOVE:
-		if (wParam & MK_RBUTTON) 
+		if (wParam & MK_LBUTTON) 
 		{
 
 			hdc = GetDC(hWnd);
