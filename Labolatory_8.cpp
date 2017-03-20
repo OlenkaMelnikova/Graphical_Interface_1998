@@ -159,7 +159,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		hdc = BeginPaint(hWnd, &ps);
 		
 		EndPaint(hWnd, &ps);
-		SetTextColor(hdc, RGB(128, 0, 128));
+		SetTextColor(hdc, RGB(128, 0, 128));//color2
 		SetBkColor(hdc, RGB(255, 255, 0));
 		EndPaint(hWnd, &ps);
 		break;
