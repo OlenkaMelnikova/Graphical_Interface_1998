@@ -160,7 +160,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		
 		EndPaint(hWnd, &ps);
 		SetTextColor(hdc, RGB(128, 0, 128));
-		SetBkColor(hdc, RGB(255, 255, 0));
+		SetBkColor(hdc, RGB(255, 255, 0)); //color 
 		EndPaint(hWnd, &ps);
 		break;
 	case WM_DESTROY:
